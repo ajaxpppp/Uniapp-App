@@ -1,0 +1,89 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录页"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册页"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		}, {
+			"path": "pages/index/detail/detail",
+			"style": {
+				// "navigationBarTitleText": "设备详情",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/personal/personal",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/device/device",
+			"style": {
+				"navigationBarTitleText": "设备管理页面",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/task/task",
+			"style": {
+				"navigationBarTitleText": "网点中心页面",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	    
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "电力管理系统",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999999", // Tab 栏文本的默认颜色
+		"selectedColor": "#4caf50", // Tab 栏文本选中时的颜色
+		"backgroundColor": "#ffffff", // Tab 栏背景颜色
+		"borderStyle": "black", // 设置 Tab 栏的边框颜色
+		"list": [{
+				"pagePath": "pages/index/index", // 对应的页面路径
+				"text": "首页", // Tab 栏的文本
+				"iconPath": "/static/icon/首页.png", // 默认图标
+				"selectedIconPath": "static/icon/首页%20(1).png" // 选中时的图标
+			},
+			{
+				"pagePath": "pages/device/device",
+				"text": "设备管理",
+				"iconPath": "/static/icon/设备管理.png",
+				"selectedIconPath": "/static/icon/设备管理.png"
+			},
+			{
+				"pagePath": "pages/task/task",
+				"text": "网点中心",
+				"iconPath": "/static/icon/任务.png",
+				"selectedIconPath": "/static/icon/任务%20(2).png"
+			},
+
+			{
+				"pagePath": "pages/personal/personal",
+				"text": "个人中心",
+				   "iconPath": "/static/icon/个人中心%20(1).png",
+				   "selectedIconPath": "/static/icon/个人中心.png"
+			}
+		]
+	}
+}
